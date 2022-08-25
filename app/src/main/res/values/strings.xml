@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">NotesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_here">search here</string>
+    <string name="choose_color">choose color</string>
+    <string name="this_is_title">This is title</string>
+    <string name="some">Lorem Ipsum is simply dummy s simply dummy the printing and typesetting industry. Lorem Ipsum has beenstandard dummy text ever since the 1500s standard dummy text ever since the 1500s</string>
+    <string name="date">dd-mm-yy</string>
+    <string name="my_notes">My Notes</string>
+    <string name="add_notes">add Notes</string>
+
 </resources>

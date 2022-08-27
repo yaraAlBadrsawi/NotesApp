@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/editFragment">
 
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.kotlin.notesapp.views.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+
+        <argument android:name="Note"
+            android:defaultValue="@null"
+            app:argType="com.kotlin.notesapp.data"
+            app:nullable="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.kotlin.notesapp.views.NoteFragment"
+        android:label="NoteFragment" >
+        <action
+            android:id="@+id/action_noteFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
 </navigation>

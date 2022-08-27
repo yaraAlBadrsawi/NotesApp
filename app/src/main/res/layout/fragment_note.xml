@@ -74,7 +74,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNote"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -83,11 +83,11 @@
         android:padding="5dp"
         android:transitionGroup="true"
         android:paddingStart="6dp"
+        android:paddingEnd="0dp"
         tools:listitem="@layout/note_item"
         tools:itemCount="3">
 
-    </android.support.v7.widget.RecyclerView>
-
+    </androidx.recyclerview.widget.RecyclerView>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -101,7 +101,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:visibility="gone">
+            android:visibility="gone"
+            android:contentDescription="@string/todo">
         </ImageView>
 
 
@@ -128,7 +129,8 @@
             android:elevation="0dp"
             android:tint="@color/white"
             app:useCompatPadding="false"
-            android:src="@drawable/ic_round_add_24">
+            android:src="@drawable/ic_round_add_24"
+            android:contentDescription="@string/todo">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
